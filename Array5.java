@@ -1,13 +1,13 @@
+ //Find missing number
  class Array5 {
     public static void main(String args[]){
-        int a[]={10,20,30,40,50};
-        int pos=3;
-        for(int i=a.length-1;i>pos;i--){
-            a[i-1]=a[i];
-        }
-        a[pos-1]=a[pos];
+        int a[]={1,2,3,4,6};
+        int expected_no_elements=a.length+1;
+        int total_sum=expected_no_elements*(expected_no_elements+1)/2;
+        int sum=0;
         for(int i=0;i<a.length;i++){
-            System.out.print(" "+a[i-1]);
+            sum=sum+a[i];
         }
+        System.out.println("missing no is"+(total_sum-sum));
     }
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let a= [4, 5, 6, 3, 2, 8, 1, 9];
+         let temp=0;
+         let temp1=0;
+         let newarr = [];
+ 
+        for(let i=0;i<a.length;i++) {
+            for(let j=i+1;j<a.length;j++){
+                if(a[i]>a[j]){
+                    temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+            // console.log(a);
+        }
+          for(let i=0;i<a.length;i++){
+        
+           
+         // for(let i=0;i<a.length;i++){
+              for(let j=i+1;j<a.length;j++){
+                temp1= a[i];
+                a[i]=a[j];
+                a[j]=temp1;
+              }
+          }
+        
+        
+          console.log(a);
+        
+    
+    
+        
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[
+            [1,1,1,1],
+            [1,2,1,1],
+            [1,2,3,1]
+
+        ];
+       
+        let count=0;
+        let max=0;
+        let max_row=0;
+        for(let i=0;i<a.length;i++){
+            for(let j=0;j<a.length;j++){
+                if(a[i][j]==1){
+                    count++;
+                    flag =false;
+                }
+            }
+            if(count>max){
+                max=count;
+                max_row=i;
+            }
+        }
+        if(flag){
+
+        }
+        console.log(max_row);
+        </script>
+</body>
+</html>
